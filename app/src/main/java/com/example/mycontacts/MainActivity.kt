@@ -21,8 +21,9 @@ class MainActivity : AppCompatActivity() {
         val monthOfBirth= "November"
         val yearOfBirth= "2007"
 
-        Log.d("Hi",firstName+ "" + lastName , "You are located at" + addressName
-        )
+        Log.d("Hi", firstName+ "" + lastName +, "You are located at" + addressName,
+        "It is"+ isMale +"That you are male."+ "You were born in"+ dayOfBirth+ monthOfBirth +
+        yearOfBirth  )
 
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
