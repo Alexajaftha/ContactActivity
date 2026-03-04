@@ -13,15 +13,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        var firstName= "Alexa"
-        var lastName= "Jaftha"
-        var Address= "1 Waterford Circle, Kirstenhof"
-        var isMale= "False"
-        var dayOfBirth= "17"
-        var monthOfBirth= "November"
-        var yearOfBirth= "2007"
+        val firstName= "Alexa"
+        val lastName= "Jaftha"
+        val addressName= "1 Waterford Circle, Kirstenhof"
+        val isMale= "False"
+        val dayOfBirth= "17"
+        val monthOfBirth= "November"
+        val yearOfBirth= "2007"
 
-        Log.d("Hi",firstName+ "" + lastName)
+        Log.d("Hi",firstName+ "" + lastName , "You are located at" + addressName
+        )
 
         setContentView(R.layout.activity_main)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
